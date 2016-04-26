@@ -28,5 +28,5 @@ def xfibo(count):
     2
     """
     for num in xfibo(count):
-        if num < count:
+        if len(num) == count:
             print num
