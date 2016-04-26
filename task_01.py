@@ -2,7 +2,6 @@
 # -*- coding: utf-8 -*-
 """This module  reates a new Fibonacci Generator."""
 
-
 def xfibo(count):
     """This functions iterates the value of count.
     Agrs:
@@ -21,12 +20,17 @@ def xfibo(count):
     print num
     0
     1
-    >>> for num in xfibo(3):
+    >>>for num in xfibo(3):
     print num
     0
     1
     2
     """
-    for num in xfibo(count):
-        if len(num) == count:
-            print num
+    iteration = 0
+    lastnum, curnum = 0, 1
+    numbers = [lastnum]
+    while iteration < count:
+            numbers.append(curnum)
+            lastnum, curnum = curnum, lastnum + curnum 
+
+    return numbers
