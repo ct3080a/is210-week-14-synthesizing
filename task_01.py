@@ -32,6 +32,5 @@ def xfibo(count):
     numbers = [lastnum]
     while iteration < count:
         numbers.append(curnum)
-        lastnum, curnum = curnum, lastnum + curnum 
-
+        lastnum, curnum = curnum, lastnum + curnum
     return numbers
