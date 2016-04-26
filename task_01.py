@@ -27,7 +27,5 @@ def xfibo(count):
     1
     2
     """
-    iterations = 0
-    while iterations < count:
-        yield iterations
-        iterations += 1
+    for num in xfibo(count):
+        print num
