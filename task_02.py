@@ -19,4 +19,4 @@ def fibo(count):
         >>> fibo(5)
         [0, 1, 2, 3, 4]
     """
-    my_comp = [num for num in task_01.xfibo(count)]
+    [num for num in task_01.xfibo(count)]
