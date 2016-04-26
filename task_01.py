@@ -17,7 +17,7 @@ def xfibo(count):
     2
     3
     4
-    >>> for num in xfibo(2):
+ :   >>> for num in xfibo(2):
     print num
     0
     1
@@ -28,4 +28,5 @@ def xfibo(count):
     2
     """
     for num in xfibo(count):
-        print num
+        if num < count:
+            print num
