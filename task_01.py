@@ -23,6 +23,6 @@ def xfibo(count):
     counter = 0
     prenum, num = 0, 1
     while counter < count:
-        yield num
+        yield prenum
         prenum, num = num, num + prenum
         counter += 1
