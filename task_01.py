@@ -22,4 +22,3 @@ def xfibo(count):
         yield lastnum
         iterations += 1
         lastnum, curnum = curnum, lastnum + curnum
-
