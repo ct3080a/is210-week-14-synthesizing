@@ -11,13 +11,5 @@ def fibo(count):
             count(integer)
         Returns:
             list comprehension
-        Examples:'
-        >>> fibo(10)
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9]
-        >>> fibo (15)
-        [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14]
-        >>> fibo(5)
-        [0, 1, 2, 3, 4]
     """
-    my_comp = [num for num in task_01.xfibo(count)]
-    print my_comp
+    return [num for num in task_01.xfibo(count)]
