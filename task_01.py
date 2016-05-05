@@ -15,10 +15,10 @@ def xfibo(count):
     Examples:
     >>>
     """
-    iteration = 0
+    iterations = 0
     lastnum, curnum = 0, 1
 
-    while iteration < count:
+    while iterations < count:
         yield lastnum
         iterations += 1
         lastnum, curnum = curnum, lastnum + curnum
