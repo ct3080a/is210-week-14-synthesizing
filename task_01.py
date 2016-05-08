@@ -24,9 +24,7 @@ def xfibo(count):
     """
     num = 0
     num_a, num_b = 0, 1
-    while True:
+    while num < count:
         yield num_a
         num_a, num_b = num_b, num_a + num_b
         num += 1
-        if num_a == count:
-            break
