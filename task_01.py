@@ -1,10 +1,10 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
-"""A Docstring"""
+"""Task 01 Module"""
 
 
-def oldfibo(count):
-    """Fibo sequence generation function.
+def xfibo(count):
+    """Defines a function for a Fibonacci generator
 
     Args:
         count (int): Number of integers to return in the sequence.
@@ -13,14 +13,17 @@ def oldfibo(count):
         list: A list of Fibonacci numbers.
 
     Examples:
-        >>> oldfibo(10)
-        [0, 1, 1, 2, 3, 5, 8]
+        >>> for i in xfibo(5):
+                print i
+        0
+        1
+        1
+        2
+        3
     """
     iteration = 0
     lastnum, curnum = 0, 1
-    numbers = [lastnum]
     while iteration < count:
-        numbers.append(curnum)
+        yield lastnum
+        iteration += 1
         lastnum, curnum = curnum, lastnum + curnum
-
-    return numbers
